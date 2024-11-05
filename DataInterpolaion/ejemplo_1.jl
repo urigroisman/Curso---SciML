@@ -63,9 +63,9 @@ plot(A)
 # on whether the forward- or backward-lookin
 A = QuadraticInterpolation(u, t, :Forward)  # same as QuadraticInterpolation(u,t,:Forward)
                                             # alternatively: A = QuadraticInterpolation(u,t,:Backward)
-P1 = plot(A)
+P1 = plot(A);
 A = QuadraticInterpolation(u,t,:Backward)
-P2 = plot(A)
+P2 = plot(A);
 plot(P1, P2, layout = (1, 2), size = (1000, 400))
 
 
